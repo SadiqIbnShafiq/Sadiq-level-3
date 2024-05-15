@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --salmon: #ef9d71;
+    --black: #000;
+    --white: #fff;
+    --cyan: #aedee0;
+    --dsalmon: #3f211e;
+    --dcyan: #162e2c;
+}
+
+body{
+    transition: all ease-in .9s;
+}
+
+.vdodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+*::selection{
+    background-color: var(--salmon);
+    color: var(--dsalmon);
+}
+
+body[theme="black"]{
+    background-color: var(--black);
+}
+
+body[theme="black"] .section{
+    color: var(--white);
+    border-color: var(--white);
+}
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+
+body[theme="cyan"] .section{
+    color: var(--dcyan);
+}
+
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+
+body[theme="salmon"] .section{
+    color: var(--dsalmon);
+}
+
+body[theme="white"]{
+    background-color: var(--white);
+}
+
+body[theme="white"] .section{
+    color: var(--black);
+}
+
